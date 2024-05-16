@@ -1,1 +1,4 @@
-site_name: My Docs
+site_name: 王鹤的博客
+nav:
+  - 首页: index.md
+  - 关于: about.md
