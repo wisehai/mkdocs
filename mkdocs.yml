@@ -1,4 +1,50 @@
 site_name: 王鹤的博客
+site_logo: img/favicon.ico
+#site_url: https://csdiy.wiki/
+site_author: alwin
+site_description: 王鹤的博客，记录学习和生活的点滴。
+
+repo_name: mkdocs
+repo_url: https://github.com/wisehai/mkdocs
+
+copyright: Copyright &copy; 2024-present <a href="https://github.com/wisehai/" target="_blank" rel="noopener noreferrer">wisehai</a>
+
+theme:
+  name: material
+
+ # language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: teal
+      accent: purple 
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: teal
+      accent: lime
+
+plugins:
+  - social
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/wisehai
+    - icon: fontawesome/brands/twitter
+    #  link: https://twitter.com/TheJamesWillett
+    - icon: fontawesome/brands/linkedin
+     # link: https://www.linkedin.com/in/willettjames/
+
+plugins:
+  - search:
+      separator: '[\s\u200b\-]'
+
 nav:
   - 首页: index.md
-  - 关于: about.md
+  - 导航: nav.md
+  - 导航: nav2.md

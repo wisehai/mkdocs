@@ -1,17 +1,13 @@
-# 王鹤的博客
+经过一段时间的研究，终于把这个博客的搭建完成了。
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+本博客的主要内容是一些个人成长笔记，包括但不限于：
 
-## Commands
+### 自然语言
 
-- `mkdocs new [dir-name]` - 创建一个界面.
-- `mkdocs serve` - 每次更改要改两个分支吗？.
-- `mkdocs build` - Build the documentation site 试试.
-- `mkdocs -h` - Print help message and exit.
+    精通英语与中文表达，锻炼大脑神经元
 
-## Project layout
+### 编程语言
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+    锻炼抽象思维
+
+希望通过这个博客，能够记录自己的学习历程，分享自己的心得体会，帮助更多的人。
