@@ -1,8 +1,4 @@
 site_name: 王鹤的博客
-site_logo: img/favicon.ico
-#site_url: https://csdiy.wiki/
-site_author: alwin
-site_description: 王鹤的博客，记录学习和生活的点滴。
 
 repo_name: mkdocs
 repo_url: https://github.com/wisehai/mkdocs
@@ -11,6 +7,7 @@ copyright: Copyright &copy; 2024-present <a href="https://github.com/wisehai/" t
 
 theme:
   name: material
+  favicon: images/favicon.ico
 
  # language: en
   palette:
@@ -46,5 +43,16 @@ plugins:
 
 nav:
   - 首页: index.md
-  - 导航: nav.md
-  - 导航: nav2.md
+  - 日志: 
+    - 2024年5月: 2024-05.md
+  - 自然语言: 
+    - 英语: nav.md
+    - 中文表达: nav2.md
+  - 编程语言: 
+    - web前端: 
+      - html: web.md
+      - css: web2.md
+      - javascript: web3.md
+    - Python: python.md
+  
+  
