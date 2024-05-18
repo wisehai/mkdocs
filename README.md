@@ -1,2 +1,2 @@
-# mkdocs
-使用github建立博客主页
+# 说明
+使用github page 和 mkdocs建立博客主页

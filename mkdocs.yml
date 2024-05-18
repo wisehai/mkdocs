@@ -32,10 +32,12 @@ extra:
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/wisehai
-    - icon: fontawesome/brands/twitter
-    #  link: https://twitter.com/TheJamesWillett
-    - icon: fontawesome/brands/linkedin
-     # link: https://www.linkedin.com/in/willettjames/
+    - icon: fontawesome/brands/zhihu
+    #  link: https://www.zhihu.com/people/wisehai
+    - icon: fontawesome/brands/bilibili
+    #  link: https://space.bilibili.com/10162516
+
+    #- icon: fontawesome/brands/openai
 
 plugins:
   - search:
@@ -47,8 +49,8 @@ nav:
   - 日志: 
     - 2024年5月: 2024-05.md
   - 自然语言: 
-    - 英语: nav.md
-    - 中文表达: nav2.md
+    - 英语: english.md
+    - 中文写作: nav2.md
   - 编程语言: 
     - web前端: 
       - html: web.md
