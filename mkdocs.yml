@@ -1,5 +1,5 @@
-site_name: 王鹤的博客
-
+site_name: 王鹤的小站
+site_language: zh
 repo_name: mkdocs
 repo_url: https://github.com/wisehai/mkdocs
 
@@ -9,7 +9,7 @@ theme:
   name: material
   favicon: images/favicon.ico
 
- # language: en
+  language: zh
   palette:
     - scheme: default
       toggle:
@@ -42,7 +42,8 @@ plugins:
       separator: '[\s\u200b\-]'
 
 nav:
-  - 首页: index.md
+  - 主页: index.md
+  - 'AI站': 'https://ai.wisehai.com/'
   - 日志: 
     - 2024年5月: 2024-05.md
   - 自然语言: 
