@@ -55,7 +55,7 @@ nav:
     - 中文写作: nav2.md
   - 编程语言: 
     - web前端: 
-      - html: web.md
+      - html: html.md
       - css: web2.md
       - javascript: web3.md
     - Python: python.md
