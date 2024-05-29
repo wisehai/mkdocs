@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../english/">
+        <link rel="prev" href="..">
       
+      
+        <link rel="next" href="../english/">
       
       
       <link rel="icon" href="../images/favicon.ico">
@@ -18,7 +20,7 @@
     
     
       
-        <title>中文写作 - 王鹤的小站</title>
+        <title>2024年5月29日 - 王鹤的小站</title>
       
     
     
@@ -69,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -101,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              中文写作
+              2024年5月29日
             
           </span>
         </div>
@@ -281,17 +288,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -305,7 +314,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             日志
@@ -316,10 +325,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../20240529/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -328,6 +346,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -344,19 +363,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -370,7 +387,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             自然语言
@@ -402,17 +419,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../nav2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -421,7 +431,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -620,6 +629,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -637,9 +648,16 @@
   
 
 
-  <h1>中文写作</h1>
+<h1 id="_1">网站添加评论功能</h1>
+<p>给 mkdocs 建的博客网站添加评论功能，使用 giscus，正常参考下面官方文档即可在任意网页添加评论功能：<a href="https://giscus.app/zh-CN">https://giscus.app/zh-CN</a>。但是我走了一些弯路，giscus 提供的代码不仅可以添加在 html 文件中，在 markdown 文件中也是直接可用的（mkdocs 的网页默认就是 markdown 格式）。</p>
+<p>mkdocs 的博客要想全局添加评论功能，可以参照<a href="https://blog.csdn.net/m0_63203517/article/details/133819706">这里</a>，需要在 mkdocs.yml 文件中配置：</p>
+<!-- 代码块开始，后面考虑怎么添加右上角复制代码按钮 -->
 
-<p>这是导航页测试</p>
+<pre><code>theme:
+  name: material
+  custom_dir: overrides
+</code></pre>
+<p>但是最后的 comments.html 文件不需要用 if comments 判断，直接在每个页面引入评论代码即可。因为我发现在我的 vscode 编辑器编辑 markdown 时，无法正常识别 comments 关键字，与其单独控制评论功能，不如直接在每个页面引入评论代码。</p>
 
 
 
